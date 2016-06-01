@@ -10,3 +10,21 @@ def prime_factorization(n):
         i += 1
     
     return prime_factors
+
+
+
+def primes(n):
+    '''function that returns a list of the first n primes'''
+    primes = []
+    i = 2
+
+    while (len(primes) < n):
+        if len(prime_factorization(i)) == 1:
+            primes.append(i)
+        i += 1
+
+    return primes
+
+
+
+print primes(10)
