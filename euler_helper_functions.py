@@ -13,7 +13,7 @@ def prime_factorization(n):
 
 
 
-def primes(n):
+def n_primes(n):
     '''function that returns a list of the first n primes'''
     primes = []
     i = 2
@@ -24,7 +24,3 @@ def primes(n):
         i += 1
 
     return primes
-
-
-
-print primes(10)
